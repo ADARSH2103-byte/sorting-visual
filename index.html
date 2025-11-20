@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sorting Visualizer</h1>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button id="generateArray">Generate New Array</button>
+      <button id="bubbleSort">Bubble Sort</button>
+      <button id="selectionSort">Selection Sort</button>
+      <button id="insertionSort">Insertion Sort</button>
+      <button id="quickSort">Quick Sort</button>
+      <button id="mergeSort">Merge Sort</button>
+
+      <label>
+        Array Size:
+        <input type="range" id="arraySize" min="10" max="100" value="50">
+      </label>
+
+      <label>
+        Speed:
+        <input type="range" id="speedRange" min="1" max="100" value="20">
+      </label>
+    </div>
+
+    <div class="array-container" id="arrayContainer"></div>
+  </main>
+
+  <footer>
+    <p>Sorting Visualizer &copy; 2025 | Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
