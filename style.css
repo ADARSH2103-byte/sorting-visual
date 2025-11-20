@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #45a049;
+}
+
+.controls label {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.array-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+  margin: 20px auto;
+  width: 90%;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Gradient Bars */
+.array-bar {
+  margin: 0 2px;
+  width: 10px;
+  transition: height 0.3s ease, background 0.3s ease;
+  background: linear-gradient(to top, #00bcd4, #4CAF50);
+}
+
+.array-bar.compare {
+  background: red;
+}
+
+.array-bar.swap {
+  background: orange;
+}
+
+.array-bar.sorted {
+  background: purple;
+}
